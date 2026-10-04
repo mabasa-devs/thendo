@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Thendo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="dots"><b></b><b></b><b></b><b></b></div>
+    <canvas id="cv"></canvas>
+    <main>
+        <!-- 1 -->
+        <section class="page show">
+            <h1>Hii, Thendo</h1>
+            <p>How was your day?</p>
+            <div class="opts" id="q1">
+                <button class="opt" data-r="Amazing! Let's keep that energy going.">Amazing</button>
+                <button class="opt" data-r="Okay days can still end well. Keep going.">Pretty okay</button>
+                <button class="opt" data-r="Then this site will be gentle with you.">Tired</button>
+                <button class="opt" data-r="Same energy as my CSS. Let's go.">Chaotic</button>
+            </div>
+            <div class="reply" id="r1" aria-live="polite"></div>
+            <button class="go hide" data-next>Next</button>
+        </section>
+        <!-- 2 -->
+        <section class="page">
+            <h1>Tell me about you</h1>
+            <p>Write anything more you would like me to know about you.</p>
+            <div class="pad">
+                <header><span>Notepad</span><span id="cnt">0 characters</span></header>
+                <textarea id="note" maxlength="2000" placeholder="Start writing here..."
+                    aria-label="Your note"></textarea>
+            </div>
+            <div class="btns">
+                <button class="alt" id="send">Send to Nhlayiseko</button>
+                <button class="go" data-next>Next</button>
+            </div>
+            <div class="reply" id="r2" aria-live="polite"></div>
+        </section>
+        <!-- 3 -->
+        <section class="page">
+            <h1>Serious question</h1>
+            <p>Which colour is the best?</p>
+            <div class="opts" id="q3">
+                <button class="opt" data-ok="0"><span class="swatch"><u
+                            style="background:#e53935"></u>Red</span></button>
+                <button class="opt" data-ok="0"><span class="swatch"><u
+                            style="background:#43a047"></u>Green</span></button>
+                <button class="opt" data-ok="1"><span class="swatch"><u style="background:#87CEEB"></u>Sky
+                        blue</span></button>
+                <button class="opt" data-ok="0"><span class="swatch"><u
+                            style="background:#fdd835"></u>Yellow</span></button>
+            </div>
+            <div class="reply" id="r3" aria-live="polite"></div>
+            <button class="go hide" data-next>Next</button>
+        </section>
+        <!-- 4 -->
+        <section class="page">
+            <h1>Thendo</h1>
+            <p>Do you like this website?</p>
+            <div class="row">
+                <button class="yes" id="yes">Yes</button>
+                <button class="no" id="no">No</button>
+            </div>
+            <div class="reply" id="r4" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <div id="wm" aria-label="Mabasa | Dev's">
+        <div>Mabasa | Dev's</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
